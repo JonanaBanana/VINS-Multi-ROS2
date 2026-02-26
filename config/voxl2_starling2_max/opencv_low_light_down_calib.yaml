@@ -1,0 +1,16 @@
+%YAML:1.0  #TODO: INSERT CORRECT PARAMETERS!
+---
+model_type: PINHOLE
+camera_name: "low_light_down"
+image_width: 2704
+image_height: 1540
+distortion_parameters:
+  k1: 0.0
+  k2: 0.0
+  p1: 0.0
+  p2: 0.0
+projection_parameters:
+  fx: 0.0
+  fy: 0.0
+  cx: 0.0
+  cy: 0.0
