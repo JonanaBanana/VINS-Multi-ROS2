@@ -1,8 +1,8 @@
 # VINS-Multi - Easy ROS2 Setup (With additional configs for custom VOXL2 Starling2 Max)
 
-This fork has modified the VINS-Multi multi-ver branch to be a ros2 only installation with very simple installation.
+This fork has modified the VINS-Multi multi-ver branch to be a ros2 only installation with very simple installation steps.
 
-The installation consists of 2 steps.
+## Installation
 
 1. Install vins_core by running the setup_script.sh, or by performing the steps in the shell script yourself one by one.
 
