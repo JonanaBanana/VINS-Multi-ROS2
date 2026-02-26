@@ -4,7 +4,7 @@ This fork has modified the VINS-Multi multi-ver branch to be a ros2 only install
 
 ## Installation
 
-1. Install vins_core by running the setup_script.sh, or by performing the steps in the shell script yourself one by one.
+1. Install vins_core by running the setup_script.sh, or by performing the steps in the shell script yourself one by one. If you run the installation line by line yourself, make sure to first cd into vins_core.
 
 2. Run a colcon build in the ros2 workspace as usual.
 
