@@ -4,9 +4,9 @@ This fork has modified the VINS-Multi multi-ver branch to be a ros2 only install
 
 ## Installation
 
-0. Prerequisite: Ceres Solver. Use the shell file _install_ceres_solver.sh_ or run the commands line by line yourself. I use the main branch from the ceres solver github as it is stable on Ubuntu 22.04 and above. ceres solver with tags 2.1.0 and 2.2.0 are quite unstable, so do not install those.
+0. Prerequisite: Ceres Solver. Run the shell file _install_ceres_solver.sh_ or run the commands line by line yourself. I use the main branch from the ceres solver github as it is stable on Ubuntu 22.04 and above. ceres solver with tags 2.1.0 and 2.2.0 are quite unstable, so do not install those.
 
-1. Install vins_core by running the setup_script.sh, or by performing the steps in the shell script yourself one by one. If you run the installation line by line yourself, make sure to first cd into vins_core.
+1. Install vins*core by running \_setup_script.sh*, or by performing the steps in the shell script yourself. If you run the installation line by line yourself, make sure to first cd into vins_core.
 
 2. Run a colcon build in the ros2 workspace as usual.
 
