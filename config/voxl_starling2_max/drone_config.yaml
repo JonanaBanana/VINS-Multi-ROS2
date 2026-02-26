@@ -27,7 +27,7 @@ imu:
 cam_module:
     num: 4
     modules:
-      - cam_id: 1 #tracking front fisheye camera
+      - cam_id: 1 #tracking front fisheye / kannala brandt camera
         depth: 0
         stereo: 0
         image_width: 1280
@@ -47,7 +47,7 @@ cam_module:
                        0.0,    0.0,    0.0,    0.0,
                        0.0,    0.0,    0.0,    0.0 ]         
 
-      - cam_id: 2 #tracking down fisheye camera
+      - cam_id: 2 #tracking down fisheye / kannala brandt camera
         depth: 0
         stereo: 0
         image_width: 1280

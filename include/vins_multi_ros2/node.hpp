@@ -14,9 +14,9 @@
 
 #include "estimator/estimator.h"
 #include "estimator/parameters.h"
-#include "vins_estimator_ros2/callback_manager.hpp"
+#include "vins_multi_ros2/callback_manager.hpp"
 
-namespace vins_estimator_ros2 {
+namespace vins_multi_ros2 {
 
 class VinsEstimatorNode : public rclcpp::Node {
 public:
@@ -56,4 +56,4 @@ private:
   std::vector<std::unique_ptr<CameraSubscribers>> camera_subs_;
 };
 
-}  // namespace vins_estimator_ros2
+}  // namespace vins_multi_ros2

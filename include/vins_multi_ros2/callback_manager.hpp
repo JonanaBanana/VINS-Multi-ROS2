@@ -22,9 +22,9 @@
 
 #include "publisher/PublisherCallbacks.h"
 #include "estimator/parameters.h"
-#include "vins_estimator_ros2/camera_pose_visualization.hpp"
+#include "vins_multi_ros2/camera_pose_visualization.hpp"
 
-namespace vins_estimator_ros2 {
+namespace vins_multi_ros2 {
 
 class CallbackManager {
 public:
@@ -71,4 +71,4 @@ private:
   const double interpolation_alpha_ = 0.5;
 };
 
-}  // namespace vins_estimator_ros2
+}  // namespace vins_multi_ros2

@@ -1,4 +1,4 @@
-#include "vins_estimator_ros2/callback_manager.hpp"
+#include "vins_multi_ros2/callback_manager.hpp"
 
 #include <algorithm>
 
@@ -9,7 +9,7 @@
 #include "utility/utility.h"
 #include "estimator/parameters.h"
 
-namespace vins_estimator_ros2 {
+namespace vins_multi_ros2 {
 
 using std::placeholders::_1;
 using namespace std::chrono_literals;
@@ -283,4 +283,4 @@ void CallbackManager::publish_full_report_cb(const Publisher::FullReportData & d
   }
 }
 
-}  // namespace vins_estimator_ros2
+}  // namespace vins_multi_ros2

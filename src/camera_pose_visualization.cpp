@@ -4,7 +4,7 @@
  * Licensed under the GNU General Public License v3.0.
  *******************************************************/
 
-#include "vins_estimator_ros2/camera_pose_visualization.hpp"
+#include "vins_multi_ros2/camera_pose_visualization.hpp"
 
 #include <geometry_msgs/msg/point.hpp>
 

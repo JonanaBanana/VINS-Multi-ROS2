@@ -1,4 +1,4 @@
-#include "vins_estimator_ros2/node.hpp"
+#include "vins_multi_ros2/node.hpp"
 
 #include <algorithm>
 #include <chrono>
@@ -16,7 +16,7 @@
 #include "estimator/parameters.h"
 #include "utility/tic_toc.h"
 
-namespace vins_estimator_ros2 {
+namespace vins_multi_ros2 {
 
 namespace {
 double to_double(const rclcpp::Time & time) {
@@ -31,7 +31,7 @@ cv::Mat convert_color(const cv::Mat & image, int code) {
 }  // namespace
 
 VinsEstimatorNode::VinsEstimatorNode(const rclcpp::NodeOptions & options)
-: rclcpp::Node("vins_estimator_ros2", options) {
+: rclcpp::Node("vins_multi_ros2", options) {
   // Load parameters first to initialize vins_multi::CAM_MODULES/IMU_MODULE
   load_parameters();
 
@@ -58,7 +58,7 @@ VinsEstimatorNode::VinsEstimatorNode(const rclcpp::NodeOptions & options)
 
   setup_subscribers();
   estimator_.start_process_thread();
-  RCLCPP_INFO(this->get_logger(), "vins_estimator_ros2 initialized, waiting for data...");
+  RCLCPP_INFO(this->get_logger(), "vins_multi_ros2 initialized, waiting for data...");
 }
 
 VinsEstimatorNode::~VinsEstimatorNode() {
@@ -68,7 +68,7 @@ VinsEstimatorNode::~VinsEstimatorNode() {
 void VinsEstimatorNode::load_parameters() {
   std::string default_config;
   try {
-    const auto share_dir = ament_index_cpp::get_package_share_directory("vins_estimator_ros2");
+    const auto share_dir = ament_index_cpp::get_package_share_directory("vins_multi_ros2");
     default_config = share_dir + std::string("/config/multi_rs_color/multi_l515_d435_color.yaml");
   } catch (const std::exception & e) {
     RCLCPP_WARN(this->get_logger(), "Failed to resolve default config path: %s", e.what());
@@ -228,4 +228,4 @@ void VinsEstimatorNode::handle_mono_image(
   estimator_.inputImage(cam_id, to_double(msg->header.stamp), img_ptr->image);
 }
 
-}  // namespace vins_estimator_ros2
+}  // namespace vins_multi_ros2
