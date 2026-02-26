@@ -16,7 +16,7 @@ def generate_launch_description():
     config_arg = DeclareLaunchArgument(
         "config_file",
         default_value=PathJoinSubstitution([
-            FindPackageShare("vins_estimator_ros2"),
+            FindPackageShare("vins_multi_ros2"),
             "config",
             "voxl_starling2_max",
             "drone_config.yaml",
@@ -31,8 +31,8 @@ def generate_launch_description():
     )
 
     node = Node(
-        package="vins_estimator_ros2",
-        executable="vins_estimator_ros2_node",
+        package="vins_multi_ros2",
+        executable="vins_multi_ros2_node",
         namespace=LaunchConfiguration("namespace"),
         output="screen",
         prefix=LaunchConfiguration("prefix"),

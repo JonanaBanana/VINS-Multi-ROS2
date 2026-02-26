@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-set(CMAKE_PREFIX_PATH "~/thirdparty/vins_core/install")
+set(CMAKE_PREFIX_PATH "${CMAKE_CURRENT_LIST_DIR}/vins_core/install")
 
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
