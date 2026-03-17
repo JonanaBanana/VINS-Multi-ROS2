@@ -5,12 +5,12 @@ camera_name: "ircam"
 image_width: 640
 image_height: 512
 distortion_parameters:
-  k1: 0.0
-  k2: 0.0
-  p1: 0.0
-  p2: 0.0
+  k1: -0.454341
+  k2: 0.318706
+  p1: -0.008568
+  p2: 0.002462
 projection_parameters:
-  fx: 0.0
-  fy: 0.0
-  cx: 0.0
-  cy: 0.0
+  fx: 761.968743
+  fy: 762.942798
+  cx: 312.966397
+  cy: 271.363729

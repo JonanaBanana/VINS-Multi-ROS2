@@ -2,15 +2,16 @@
 ---
 model_type: PINHOLE
 camera_name: "low_light_down"
-image_width: 2704
-image_height: 1540
+image_width: 1920
+image_height: 1080
 distortion_parameters:
-  k1: 0.0
-  k2: 0.0
-  p1: 0.0
-  p2: 0.0
+  k1: -3.4571111680382122e-01
+  k2: 1.5981702959464913e-01
+  p1: 6.3987465789665026e-04
+  p2: -2.0356148208271343e-04
+  k3: -4.1887188957886519e-02
 projection_parameters:
-  fx: 0.0
-  fy: 0.0
-  cx: 0.0
-  cy: 0.0
+  fx: 1.2045173795381450e+03
+  fy: 1.2054716926769793e+03
+  cx: 9.3606290880125891e+02
+  cy: 5.4838794753450145e+02
